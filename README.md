@@ -4,4 +4,4 @@
 
 Hi there,
 
-Welcome to my personal blog, this repo contains the source code of my blog. I mostly write about python and machine learning. You can access it at https://montepy.in
+Welcome to my personal blog, this repo contains the source code of the blog. I mostly write about python and machine learning. You can access it at https://montepy.in
