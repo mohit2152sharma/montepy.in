@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Monte&#39;s Snippets</title>
-    <link>//localhost:1313/</link>
-    <description>Recent content on Monte&#39;s Snippets</description>
+    <title>Posts on Monte&#39;s Snippets</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Posts on Monte&#39;s Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Apr 2024 22:43:39 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to parse json in terminal using jq</title>
+      <title>How to parse json using jq</title>
       <link>//localhost:1313/posts/jq/</link>
       <pubDate>Mon, 01 Apr 2024 22:43:39 +0530</pubDate>
       <guid>//localhost:1313/posts/jq/</guid>
-      <description>A practical tutorial on jq So here&amp;rsquo;s the problem statement: Find the repository on github in which you have made most number of commits? And you need to do this on terminal (no python)
+      <description>So here&amp;rsquo;s the problem statement: _Find the repository on github in which you have made most number of commits? And you need to do this on terminal (no python)__
 Ofcourse, one can use python to find the answer, and it might be probably easy for you, if you have been using python for last many years. But let&amp;rsquo;s see if I can do this in terminal with jq and while doing so, let&amp;rsquo;s learn about it.</description>
     </item>
     <item>
