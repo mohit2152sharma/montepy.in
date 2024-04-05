@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Monte&#39;s Snippets</title>
-    <link>//localhost:1313/</link>
-    <description>Recent content on Monte&#39;s Snippets</description>
+    <title>Shell on Monte&#39;s Snippets</title>
+    <link>//localhost:1313/tags/shell/</link>
+    <description>Recent content in Shell on Monte&#39;s Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Apr 2024 22:43:39 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to parse json in terminal using jq</title>
+      <title>How to parse json using jq</title>
       <link>//localhost:1313/posts/jq/</link>
       <pubDate>Mon, 01 Apr 2024 22:43:39 +0530</pubDate>
       <guid>//localhost:1313/posts/jq/</guid>
-      <description>A practical tutorial on jq So here&amp;rsquo;s the problem statement: Find the repository on github in which you have made most number of commits? And you need to do this on terminal (no python)
+      <description>So here&amp;rsquo;s the problem statement: _Find the repository on github in which you have made most number of commits? And you need to do this on terminal (no python)__
 Ofcourse, one can use python to find the answer, and it might be probably easy for you, if you have been using python for last many years. But let&amp;rsquo;s see if I can do this in terminal with jq and while doing so, let&amp;rsquo;s learn about it.</description>
     </item>
     <item>
@@ -24,14 +24,6 @@ Ofcourse, one can use python to find the answer, and it might be probably easy f
       <description>Manager: Hey, I need your help, I have couple of images that are taking a lot of space on my PC, I want to delete them. How can I do that?
 Developer: Well that should be simple. Here, you go. This looks for all files with .png extension in the current directory and its subdirectories (using -R flag), then pipes those file names to rm command to delete them.
 ls -R | grep &amp;#34;.</description>
-    </item>
-    <item>
-      <title>First Post</title>
-      <link>//localhost:1313/posts/first-post/</link>
-      <pubDate>Fri, 02 Feb 2024 23:39:06 +0530</pubDate>
-      <guid>//localhost:1313/posts/first-post/</guid>
-      <description>First Post This is an example post to test the website. It just contains some rough snippets.
-def hello_world(): print(&amp;#34;Hello, World!&amp;#34;) </description>
     </item>
   </channel>
 </rss>
