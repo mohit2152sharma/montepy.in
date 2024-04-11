@@ -1,5 +1,5 @@
 ---
-title: "Impress your colleagues with find"
+title: "How to `find` files in terminal?"
 date: 2024-02-21T20:26:20+05:30
 draft: false
 tags: ["bash", "shell"]
