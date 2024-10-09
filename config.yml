@@ -77,18 +77,21 @@ params:
     Content: Welcome to my dev journal. I mostly write about python and machine learning stuff.
 
   socialIcons:
-    - name: stackoverflow
-      url: "https://stackoverflow.com/users/8547986/monte"
+    # - name: stackoverflow
+    #   url: "https://stackoverflow.com/users/8547986/monte"
+    - name: email
+      url: "mailto:mohitsharma@alumni.iitm.ac.in"
     - name: github
       url: "https://github.com/mohit2152sharma"
-    - name: youtube
-      url: "https://www.youtube.com/channel/UChZfYRQRGADaLtgdYaB0YBg"
+    # - name: youtube
+    #   url: "https://www.youtube.com/channel/UChZfYRQRGADaLtgdYaB0YBg"
     - name: x
-      url: "https://twitter.com/mohitsh48631107"
+      url: "https://www.threads.net/@_m__o__n__t__e_"
     - name: linkedin
       url: "https://www.linkedin.com/in/mohit-sharma-82030487/"
-    - name: paypal
-      url: "https://paypal.me/mohit2013?country.x=IN&locale.x=en_GB"
+    - name: rss
+    # - name: paypal
+    #   url: "https://paypal.me/mohit2013?country.x=IN&locale.x=en_GB"
 
   analytics:
     google:
