@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Example on Monte&#39;s Snippets</title>
     <link>//localhost:1313/tags/example/</link>
     <description>Recent content in Example on Monte&#39;s Snippets</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.136.5</generator>
     <language>en</language>
     <lastBuildDate>Fri, 02 Feb 2024 23:39:06 +0530</lastBuildDate>
     <atom:link href="//localhost:1313/tags/example/index.xml" rel="self" type="application/rss+xml" />
@@ -13,8 +13,12 @@
       <link>//localhost:1313/posts/first-post/</link>
       <pubDate>Fri, 02 Feb 2024 23:39:06 +0530</pubDate>
       <guid>//localhost:1313/posts/first-post/</guid>
-      <description>First Post This is an example post to test the website. It just contains some rough snippets.
-def hello_world(): print(&amp;#34;Hello, World!&amp;#34;) </description>
+      <description>&lt;h1 id=&#34;first-post&#34;&gt;First Post&lt;/h1&gt;
+&lt;p&gt;This is an example post to test the website. It just contains some rough snippets.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;hello_world&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

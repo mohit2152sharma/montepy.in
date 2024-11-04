@@ -2,6 +2,7 @@
 title: "How to parse json in terminal using jq"
 date: 2024-04-01T22:43:39+05:30
 draft: false
+canonicalUrl: https://montepy.in/posts/jq
 tags: ["bash", "shell"]
 ShowBreadCrumbs: true
 categories: ["tools"]

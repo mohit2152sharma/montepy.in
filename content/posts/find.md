@@ -4,6 +4,7 @@ date: 2024-02-21T20:26:20+05:30
 draft: false
 tags: ["bash", "shell"]
 ShowBreadCrumbs: true
+canonicalUrl: https://montepy.in/posts/find
 categories: ["tools"]
 ---
 

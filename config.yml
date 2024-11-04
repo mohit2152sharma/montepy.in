@@ -4,9 +4,9 @@ paginate: 5
 theme: PaperMod
 
 enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
+buildDrafts: true
+buildFuture: true
+# buildExpired: false
 
 googleAnalytics: G-1JKCGP13SR
 
@@ -19,9 +19,7 @@ params:
   title: Monte's Snippets
   description: "Monte's dev journal"
   keywords: [Blog, Portfolio, PaperMod]
-  author: Me
-  # author: ["Me", "You"] # multiple authors
-  # images: ["<link or path of image for opengraph, twitter-cards>"]
+  author: Mohit Sharma
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -41,6 +39,24 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
+
+  # social:
+  socialIcons:
+    # - name: stackoverflow
+    #   url: "https://stackoverflow.com/users/8547986/monte"
+    - name: email
+      url: "mailto:mohitsharma@alumni.iitm.ac.in"
+    - name: github
+      url: "https://github.com/mohit2152sharma"
+    # - name: youtube
+    #   url: "https://www.youtube.com/channel/UChZfYRQRGADaLtgdYaB0YBg"
+    - name: threads
+      url: "https://www.threads.net/@_m__o__n__t__e_"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/mohit-sharma-82030487/"
+    # - name: rss
+  # - name: paypal
+  #   url: "https://paypal.me/mohit2013?country.x=IN&locale.x=en_GB"
 
   assets:
     # disableHLJS: true # to disable highlight.js
@@ -76,26 +92,9 @@ params:
     Title: "Hi there \U0001F44B"
     Content: Welcome to my dev journal. I mostly write about python and machine learning stuff.
 
-  socialIcons:
-    # - name: stackoverflow
-    #   url: "https://stackoverflow.com/users/8547986/monte"
-    - name: email
-      url: "mailto:mohitsharma@alumni.iitm.ac.in"
-    - name: github
-      url: "https://github.com/mohit2152sharma"
-    # - name: youtube
-    #   url: "https://www.youtube.com/channel/UChZfYRQRGADaLtgdYaB0YBg"
-    - name: x
-      url: "https://www.threads.net/@_m__o__n__t__e_"
-    - name: linkedin
-      url: "https://www.linkedin.com/in/mohit-sharma-82030487/"
-    - name: rss
-    # - name: paypal
-    #   url: "https://paypal.me/mohit2013?country.x=IN&locale.x=en_GB"
-
   analytics:
     google:
-      SiteVerificationTag: "XYZabc"
+      SiteVerificationTag: "G-1JKCGP13SR"
 
   cover:
     hidden: true # hide everywhere but not in structured data
@@ -103,7 +102,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/mohit2152sharma/montepy.in/content"
+    URL: "https://github.com/mohit2152sharma/montepy.in/blob/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
