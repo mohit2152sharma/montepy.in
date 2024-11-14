@@ -1,5 +1,5 @@
 ---
-title: How to set up a JavaScript/TypeScript project"
+title: How to set up a JavaScript/TypeScript project
 date: 2024-11-14T17:27:43+05:30
 draft: false
 tags: ["how-to", "javascript", "typescript"]
