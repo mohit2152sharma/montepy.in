@@ -52,8 +52,11 @@ Suppose you have a typescript file that you want to run from the command line.
 
 ## Running a TypeScript project
 
-1. In addition to the steps mentioned above for Javascript, the project directory must also have a `tsconfig.json` file. This file is used by `typescript` compiler to compile the files. Note you would still need to install `typescript` (or `ts-node`)
-2. The `tsconfig.json` file has a `compilerOptions` section, this defines the options for the compiler. In this section, you can define the `target` option, which tells which version of ECMAScript to compile to (use `ESNext` for latest ECMAScript standard). There are more options available for `tsconfig.json`, [reference](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
+### Using `ts-node`
+
+> [!NOTE] You can avoid using `ts-node` and use `tsx` which supports TypeScript out of the box. No need to add additional support for esm modules
+
+1. In addition to the steps mentioned above for Javascript, the project directory must also have a `tsconfig.json` file. This file is used by `typescript` compiler to compile the files. Note you would still need to install `typescript` (or `ts-node`) 2. The `tsconfig.json` file has a `compilerOptions` section, this defines the options for the compiler. In this section, you can define the `target` option, which tells which version of ECMAScript to compile to (use `ESNext` for latest ECMAScript standard). There are more options available for `tsconfig.json`, [reference](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
 
 ```json5
 {
@@ -68,6 +71,10 @@ Suppose you have a typescript file that you want to run from the command line.
   include: ["src/**/*.ts"], // which files to include in compilation
   exclude: ["node_modules", "dist"], // which files to exclude from compilation
   outDir: "dist", // where to place the compiled files
+  // If you are using ECMAScript moduels and ts-node, then add the following
+  "ts-node": {
+    esm: true,
+  },
 }
 ```
 
@@ -80,6 +87,7 @@ Suppose you have a typescript file that you want to run from the command line.
     test: "jest .",
     build: "tsc",
     dev: "ts-node src/index.ts",
+    // dev: "ts-node --esm src/index.ts" // if you are using ES modules
   },
 }
 ```
