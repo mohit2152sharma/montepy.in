@@ -54,7 +54,8 @@ Suppose you have a typescript file that you want to run from the command line.
 
 ### Using `ts-node`
 
-> [!NOTE] You can avoid using `ts-node` and use `tsx` which supports TypeScript out of the box. No need to add additional support for esm modules
+> [!NOTE]
+> You can avoid using `ts-node` and use `tsx` which supports TypeScript out of the box. No need to add additional support for esm modules
 
 1. In addition to the steps mentioned above for Javascript, the project directory must also have a `tsconfig.json` file. This file is used by `typescript` compiler to compile the files. Note you would still need to install `typescript` (or `ts-node`) 2. The `tsconfig.json` file has a `compilerOptions` section, this defines the options for the compiler. In this section, you can define the `target` option, which tells which version of ECMAScript to compile to (use `ESNext` for latest ECMAScript standard). There are more options available for `tsconfig.json`, [reference](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
 
