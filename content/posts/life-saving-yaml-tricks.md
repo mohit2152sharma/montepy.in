@@ -7,8 +7,6 @@ ShowBreadCrumbs: true
 categories: ["tools"]
 ---
 
-# Time Saving Yaml Tricks
-
 ### DRY: Don't Repeat Yourself
 
 If you have a section that's being repeated multiple times, you can create an anchor and then reference it. You use `&name` to create an anchor, and then `*name` to reference it. One example of it is defining environment variables for different services in `docker-compose.yaml`.
