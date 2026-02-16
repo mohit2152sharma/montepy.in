@@ -2,26 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Bash on Monte&#39;s Snippets</title>
-    <link>montepy.in/tags/bash/</link>
+    <link>//localhost:1313/tags/bash/</link>
     <description>Recent content in Bash on Monte&#39;s Snippets</description>
     <generator>Hugo -- 0.136.5</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Apr 2024 22:43:39 +0530</lastBuildDate>
-    <atom:link href="montepy.in/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 May 2025 14:57:08 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Synchronising Clocks</title>
+      <link>//localhost:1313/posts/ntp/</link>
+      <pubDate>Tue, 06 May 2025 14:57:08 +0530</pubDate>
+      <guid>//localhost:1313/posts/ntp/</guid>
+      <description>&lt;p&gt;Few days back, I encountered the following error on my website &lt;a href=&#34;https://saral.club&#34;&gt;saral.club&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;botocore.exceptions.ClientError: An error occurred (SignatureDoesNotMatch) when calling the SendEmail operation:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Signature not yet current: 20250505T152002Z is still later than 20250505T151830Z (20250505T151330Z + 5 min.)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;By the looks of it, the error message is descriptive enough to guide you that there is some kind of time mismatch in the signature. Before sending a request to aws, the botocore library signs the request using your access keys. The signature also includes a timestamp. And the error message is saying that the request I am sending is probably 5 minutes later (in future) then the current time (time on aws servers). Of course, the two clocks (one on my server and the other on aws&amp;rsquo;s server) cannot have the same exact time, so aws allows for some time skew (5 minutes).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to parse json in terminal using jq</title>
-      <link>montepy.in/posts/jq/</link>
+      <link>//localhost:1313/posts/jq/</link>
       <pubDate>Mon, 01 Apr 2024 22:43:39 +0530</pubDate>
-      <guid>montepy.in/posts/jq/</guid>
+      <guid>//localhost:1313/posts/jq/</guid>
       <description>&lt;h2 id=&#34;a-practical-tutorial-on-jq&#34;&gt;A practical tutorial on &lt;code&gt;jq&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;So here&amp;rsquo;s the problem statement: &lt;em&gt;&lt;strong&gt;Find the repository on github in which you have made most number of commits? And you need to do this on terminal (no python)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Ofcourse, one can use python to find the answer, and it might be probably easy for you, if you have been using python for last many years. But let&amp;rsquo;s see if I can do this in terminal with &lt;code&gt;jq&lt;/code&gt; and while doing so, let&amp;rsquo;s learn about it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to `find` files in terminal?</title>
-      <link>montepy.in/posts/find/</link>
+      <link>//localhost:1313/posts/find/</link>
       <pubDate>Wed, 21 Feb 2024 20:26:20 +0530</pubDate>
-      <guid>montepy.in/posts/find/</guid>
+      <guid>//localhost:1313/posts/find/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Manager&lt;/strong&gt;&lt;/em&gt;: Hey, I need your help, I have couple of images that are taking a lot of space on my PC, I want to delete them. How can I do that?&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Developer&lt;/strong&gt;&lt;/em&gt;: Well that should be simple. Here, you go. This looks for all files with &lt;code&gt;.png&lt;/code&gt; extension in the current directory and its subdirectories (using &lt;code&gt;-R&lt;/code&gt; flag), then pipes those file names to &lt;code&gt;rm&lt;/code&gt; command to delete them.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ls -R &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep &lt;span class=&#34;s2&#34;&gt;&amp;#34;.png&lt;/span&gt;$&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; xargs rm

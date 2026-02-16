@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Typescript on Monte&#39;s Snippets</title>
+    <link>//localhost:1313/tags/typescript/</link>
+    <description>Recent content in Typescript on Monte&#39;s Snippets</description>
+    <generator>Hugo -- 0.136.5</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 14 Nov 2024 17:27:43 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to set up a JavaScript/TypeScript project</title>
+      <link>//localhost:1313/posts/how-to-setup-jsts-project/</link>
+      <pubDate>Thu, 14 Nov 2024 17:27:43 +0530</pubDate>
+      <guid>//localhost:1313/posts/how-to-setup-jsts-project/</guid>
+      <description>&lt;h2 id=&#34;running-a-javascript-file&#34;&gt;Running a Javascript file&lt;/h2&gt;
+&lt;p&gt;Suppose you have a javascript file that you want to run from the command line.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install &lt;code&gt;node&lt;/code&gt; or &lt;code&gt;deno&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Run the file with &lt;code&gt;node &amp;lt;filepath.js&amp;gt;&lt;/code&gt; or &lt;code&gt;deno &amp;lt;filepath.js&amp;gt;&lt;/code&gt; or &lt;code&gt;deno run &amp;lt;filepath.js&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;running-a-typescript-file&#34;&gt;Running a TypeScript file&lt;/h2&gt;
+&lt;p&gt;Suppose you have a typescript file that you want to run from the command line.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install &lt;code&gt;node&lt;/code&gt;. &lt;code&gt;npm&lt;/code&gt; comes bundled with &lt;code&gt;node&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Install the typescript compiler with &lt;code&gt;npm install -g typescript&lt;/code&gt;. Note that this will install the latest version of typescript compiler globally.&lt;/li&gt;
+&lt;li&gt;Compile the file with &lt;code&gt;tsc &amp;lt;filepath.ts&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Run the file with &lt;code&gt;node &amp;lt;comiled-filepath.js&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Alternatively, you can install the &lt;code&gt;ts-node&lt;/code&gt; package with &lt;code&gt;npm install -g ts-node&lt;/code&gt;. This will install the latest version of &lt;code&gt;ts-node&lt;/code&gt; globally. &lt;code&gt;ts-node&lt;/code&gt; compiles the file on the file and executes it. &lt;code&gt;ts-node &amp;lt;filepath.ts&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;running-a-javascript-project&#34;&gt;Running a Javascript project&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;The project directory must have a &lt;code&gt;package.json&lt;/code&gt; file. This file is used by &lt;code&gt;npm&lt;/code&gt; and can also be used to define additional information if you plan to publish the module to &lt;code&gt;npm&lt;/code&gt; registry.&lt;/li&gt;
+&lt;li&gt;Install the dependencies mentioned in the &lt;code&gt;package.json&lt;/code&gt; file with &lt;code&gt;npm install&lt;/code&gt;, &lt;a href=&#34;https://docs.npmjs.com/cli/v10/configuring-npm/package-json&#34;&gt;more details about &lt;code&gt;package.json&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;package.json&lt;/code&gt; file have a &lt;code&gt;scripts&lt;/code&gt; section, this defines the commands that can be run with &lt;code&gt;npm run &amp;lt;command&amp;gt;&lt;/code&gt;. In this section, you can define commands like &lt;code&gt;start: node index.js; test: jest .&lt;/code&gt;, then if you run &lt;code&gt;npm run test&lt;/code&gt; it will run the tests.&lt;/li&gt;
+&lt;li&gt;Note, &lt;code&gt;npm&lt;/code&gt; defines three commands which can be run without using the &lt;code&gt;run&lt;/code&gt; command, &lt;code&gt;npm start&lt;/code&gt;, &lt;code&gt;npm test&lt;/code&gt; and &lt;code&gt;npm stop&lt;/code&gt;. The &lt;code&gt;start&lt;/code&gt; command defaults to using &lt;code&gt;index.js&lt;/code&gt; file&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;package.json&lt;/code&gt; file has a &lt;code&gt;main&lt;/code&gt; field, this is the file that is executed when you import the package in another file.&lt;/li&gt;
+&lt;li&gt;By default, &lt;code&gt;npm&lt;/code&gt; treats the imports as CommonJS modules, if you are using ES modules, you need to add the &lt;code&gt;type&lt;/code&gt; key in your &lt;code&gt;package.json&lt;/code&gt; with value &lt;code&gt;module&lt;/code&gt;. Then all files must use &lt;code&gt;import/export&lt;/code&gt; syntax.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  name: &amp;#34;my-package&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  version: &amp;#34;1.0.0&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  main: &amp;#34;index.js&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  scripts: {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    start: &amp;#34;node index.js&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    test: &amp;#34;jest .&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  type: &amp;#34;module&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  dependencies: {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    jest: &amp;#34;^27.5.1&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;running-a-typescript-project&#34;&gt;Running a TypeScript project&lt;/h2&gt;
+&lt;h3 id=&#34;using-ts-node&#34;&gt;Using &lt;code&gt;ts-node&lt;/code&gt;&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]
+You can avoid using &lt;code&gt;ts-node&lt;/code&gt; and use &lt;code&gt;tsx&lt;/code&gt; which supports TypeScript out of the box. No need to add additional support for esm modules&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
