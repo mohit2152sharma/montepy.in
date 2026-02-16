@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Monte&#39;s Snippets</title>
-    <link>montepy.in/categories/</link>
+    <link>//localhost:1313/categories/</link>
     <description>Recent content in Categories on Monte&#39;s Snippets</description>
-    <generator>Hugo -- 0.136.5</generator>
+    <generator>Hugo -- 0.155.3</generator>
     <language>en</language>
     <lastBuildDate>Wed, 12 Feb 2025 17:35:54 +0530</lastBuildDate>
-    <atom:link href="montepy.in/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tools</title>
-      <link>montepy.in/categories/tools/</link>
+      <link>//localhost:1313/categories/tools/</link>
       <pubDate>Wed, 12 Feb 2025 17:35:54 +0530</pubDate>
-      <guid>montepy.in/categories/tools/</guid>
+      <guid>//localhost:1313/categories/tools/</guid>
       <description></description>
     </item>
     <item>
       <title>How-To</title>
-      <link>montepy.in/categories/how-to/</link>
+      <link>//localhost:1313/categories/how-to/</link>
       <pubDate>Thu, 14 Nov 2024 17:27:43 +0530</pubDate>
-      <guid>montepy.in/categories/how-to/</guid>
+      <guid>//localhost:1313/categories/how-to/</guid>
       <description></description>
     </item>
     <item>
       <title>Example</title>
-      <link>montepy.in/categories/example/</link>
+      <link>//localhost:1313/categories/example/</link>
       <pubDate>Fri, 02 Feb 2024 23:39:06 +0530</pubDate>
-      <guid>montepy.in/categories/example/</guid>
+      <guid>//localhost:1313/categories/example/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>montepy.in/categories/python/</link>
+      <link>//localhost:1313/categories/python/</link>
       <pubDate>Fri, 02 Feb 2024 23:39:06 +0530</pubDate>
-      <guid>montepy.in/categories/python/</guid>
+      <guid>//localhost:1313/categories/python/</guid>
       <description></description>
     </item>
   </channel>

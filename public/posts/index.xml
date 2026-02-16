@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Monte&#39;s Snippets</title>
-    <link>montepy.in/posts/</link>
+    <link>//localhost:1313/posts/</link>
     <description>Recent content in Posts on Monte&#39;s Snippets</description>
-    <generator>Hugo -- 0.136.5</generator>
+    <generator>Hugo -- 0.155.3</generator>
     <language>en</language>
     <lastBuildDate>Tue, 06 May 2025 14:57:08 +0530</lastBuildDate>
-    <atom:link href="montepy.in/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Synchronising Clocks</title>
-      <link>montepy.in/posts/ntp/</link>
+      <link>//localhost:1313/posts/ntp/</link>
       <pubDate>Tue, 06 May 2025 14:57:08 +0530</pubDate>
-      <guid>montepy.in/posts/ntp/</guid>
+      <guid>//localhost:1313/posts/ntp/</guid>
       <description>&lt;p&gt;Few days back, I encountered the following error on my website &lt;a href=&#34;https://saral.club&#34;&gt;saral.club&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;botocore.exceptions.ClientError: An error occurred (SignatureDoesNotMatch) when calling the SendEmail operation:
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Signature not yet current: 20250505T152002Z is still later than 20250505T151830Z (20250505T151330Z + 5 min.)
@@ -20,9 +20,9 @@
     </item>
     <item>
       <title>Time Saving Yaml Tricks</title>
-      <link>montepy.in/posts/life-saving-yaml-tricks/</link>
+      <link>//localhost:1313/posts/life-saving-yaml-tricks/</link>
       <pubDate>Wed, 12 Feb 2025 17:35:54 +0530</pubDate>
-      <guid>montepy.in/posts/life-saving-yaml-tricks/</guid>
+      <guid>//localhost:1313/posts/life-saving-yaml-tricks/</guid>
       <description>&lt;h3 id=&#34;dry-dont-repeat-yourself&#34;&gt;DRY: Don&amp;rsquo;t Repeat Yourself&lt;/h3&gt;
 &lt;p&gt;If you have a section that&amp;rsquo;s being repeated multiple times, you can create an anchor and then reference it. You use &lt;code&gt;&amp;amp;name&lt;/code&gt; to create an anchor, and then &lt;code&gt;*name&lt;/code&gt; to reference it. One example of it is defining environment variables for different services in &lt;code&gt;docker-compose.yaml&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;env_vars&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&amp;amp;env&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -30,7 +30,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;LOGLEVEL&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;info&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;AWS_REGION_NAME&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;us-east-1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;services&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;services&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;api&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;environment&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;*env&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -45,9 +45,9 @@
     </item>
     <item>
       <title>How to set up a JavaScript/TypeScript project</title>
-      <link>montepy.in/posts/how-to-setup-jsts-project/</link>
+      <link>//localhost:1313/posts/how-to-setup-jsts-project/</link>
       <pubDate>Thu, 14 Nov 2024 17:27:43 +0530</pubDate>
-      <guid>montepy.in/posts/how-to-setup-jsts-project/</guid>
+      <guid>//localhost:1313/posts/how-to-setup-jsts-project/</guid>
       <description>&lt;h2 id=&#34;running-a-javascript-file&#34;&gt;Running a Javascript file&lt;/h2&gt;
 &lt;p&gt;Suppose you have a javascript file that you want to run from the command line.&lt;/p&gt;
 &lt;ol&gt;
@@ -93,27 +93,27 @@ You can avoid using &lt;code&gt;ts-node&lt;/code&gt; and use &lt;code&gt;tsx&lt;
     </item>
     <item>
       <title>All the ways to `git add`</title>
-      <link>montepy.in/posts/git-add/</link>
+      <link>//localhost:1313/posts/git-add/</link>
       <pubDate>Thu, 24 Oct 2024 20:26:20 +0530</pubDate>
-      <guid>montepy.in/posts/git-add/</guid>
+      <guid>//localhost:1313/posts/git-add/</guid>
       <description>&lt;p&gt;I always get confused with, should I run &lt;code&gt;git add .&lt;/code&gt;, or should I run &lt;code&gt;git add --all&lt;/code&gt;, or should I run &lt;code&gt;git add -A&lt;/code&gt;? Given all these commands, do a similar thing, confusion is bound to happen. Thankfully, it&amp;rsquo;s not just &lt;a href=&#34;https://stackoverflow.com/questions/23003118/any-difference-between-git-add-and-git-add-all#:~:text=git%20add%20%2D%2Dall%20will,git%20add%20.&#34;&gt;me&lt;/a&gt;. So I decided to take a deep dive into &lt;code&gt;add&lt;/code&gt; command of &lt;code&gt;git&lt;/code&gt;, to end this confusion once and for all.&lt;/p&gt;
 &lt;h2 id=&#34;what-does-add-even-do&#34;&gt;What does &lt;code&gt;add&lt;/code&gt; even do?&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;add&lt;/code&gt; command adds your changes to staging area. Staging area is a buffer zone where you place your files before committing them. This buffer zone allows you to be selective with your commits, there are some files that you want to commit now and some files that you want to commit later. Staging area is also known as &lt;code&gt;index&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to parse json in terminal using jq</title>
-      <link>montepy.in/posts/jq/</link>
+      <link>//localhost:1313/posts/jq/</link>
       <pubDate>Mon, 01 Apr 2024 22:43:39 +0530</pubDate>
-      <guid>montepy.in/posts/jq/</guid>
+      <guid>//localhost:1313/posts/jq/</guid>
       <description>&lt;h2 id=&#34;a-practical-tutorial-on-jq&#34;&gt;A practical tutorial on &lt;code&gt;jq&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;So here&amp;rsquo;s the problem statement: &lt;em&gt;&lt;strong&gt;Find the repository on github in which you have made most number of commits? And you need to do this on terminal (no python)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Ofcourse, one can use python to find the answer, and it might be probably easy for you, if you have been using python for last many years. But let&amp;rsquo;s see if I can do this in terminal with &lt;code&gt;jq&lt;/code&gt; and while doing so, let&amp;rsquo;s learn about it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to `find` files in terminal?</title>
-      <link>montepy.in/posts/find/</link>
+      <link>//localhost:1313/posts/find/</link>
       <pubDate>Wed, 21 Feb 2024 20:26:20 +0530</pubDate>
-      <guid>montepy.in/posts/find/</guid>
+      <guid>//localhost:1313/posts/find/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Manager&lt;/strong&gt;&lt;/em&gt;: Hey, I need your help, I have couple of images that are taking a lot of space on my PC, I want to delete them. How can I do that?&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Developer&lt;/strong&gt;&lt;/em&gt;: Well that should be simple. Here, you go. This looks for all files with &lt;code&gt;.png&lt;/code&gt; extension in the current directory and its subdirectories (using &lt;code&gt;-R&lt;/code&gt; flag), then pipes those file names to &lt;code&gt;rm&lt;/code&gt; command to delete them.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ls -R &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep &lt;span class=&#34;s2&#34;&gt;&amp;#34;.png&lt;/span&gt;$&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; xargs rm
@@ -121,9 +121,9 @@ You can avoid using &lt;code&gt;ts-node&lt;/code&gt; and use &lt;code&gt;tsx&lt;
     </item>
     <item>
       <title>First Post</title>
-      <link>montepy.in/posts/first-post/</link>
+      <link>//localhost:1313/posts/first-post/</link>
       <pubDate>Fri, 02 Feb 2024 23:39:06 +0530</pubDate>
-      <guid>montepy.in/posts/first-post/</guid>
+      <guid>//localhost:1313/posts/first-post/</guid>
       <description>&lt;h1 id=&#34;first-post&#34;&gt;First Post&lt;/h1&gt;
 &lt;p&gt;This is an example post to test the website. It just contains some rough snippets.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;

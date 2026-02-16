@@ -2,77 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>montepy.in/tags/bash/</loc>
+    <loc>//localhost:1313/tags/bash/</loc>
     <lastmod>2025-05-06T14:57:08+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2025-05-06T14:57:08+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/posts/</loc>
+    <loc>//localhost:1313/posts/</loc>
     <lastmod>2025-05-06T14:57:08+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/tags/shell/</loc>
+    <loc>//localhost:1313/tags/shell/</loc>
     <lastmod>2025-05-06T14:57:08+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/posts/ntp/</loc>
+    <loc>//localhost:1313/posts/ntp/</loc>
     <lastmod>2025-05-06T14:57:08+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
     <lastmod>2025-05-06T14:57:08+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
     <lastmod>2025-02-12T17:35:54+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/posts/life-saving-yaml-tricks/</loc>
+    <loc>//localhost:1313/posts/life-saving-yaml-tricks/</loc>
     <lastmod>2025-02-12T17:35:54+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/categories/tools/</loc>
+    <loc>//localhost:1313/categories/tools/</loc>
     <lastmod>2025-02-12T17:35:54+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/tags/yaml/</loc>
+    <loc>//localhost:1313/tags/yaml/</loc>
     <lastmod>2025-02-12T17:35:54+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/posts/how-to-setup-jsts-project/</loc>
+    <loc>//localhost:1313/posts/how-to-setup-jsts-project/</loc>
     <lastmod>2024-11-14T17:27:43+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/tags/how-to/</loc>
+    <loc>//localhost:1313/categories/how-to/</loc>
     <lastmod>2024-11-14T17:27:43+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/categories/how-to/</loc>
+    <loc>//localhost:1313/tags/how-to/</loc>
     <lastmod>2024-11-14T17:27:43+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/tags/javascript/</loc>
+    <loc>//localhost:1313/tags/javascript/</loc>
     <lastmod>2024-11-14T17:27:43+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/tags/typescript/</loc>
+    <loc>//localhost:1313/tags/typescript/</loc>
     <lastmod>2024-11-14T17:27:43+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/posts/git-add/</loc>
+    <loc>//localhost:1313/posts/git-add/</loc>
     <lastmod>2024-10-24T20:26:20+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/tags/git/</loc>
+    <loc>//localhost:1313/tags/git/</loc>
     <lastmod>2024-10-24T20:26:20+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/posts/jq/</loc>
+    <loc>//localhost:1313/posts/jq/</loc>
     <lastmod>2024-04-01T22:43:39+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/posts/find/</loc>
+    <loc>//localhost:1313/posts/find/</loc>
     <lastmod>2024-02-21T20:26:20+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/tags/example/</loc>
+    <loc>//localhost:1313/categories/example/</loc>
     <lastmod>2024-02-02T23:39:06+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/categories/example/</loc>
+    <loc>//localhost:1313/tags/example/</loc>
     <lastmod>2024-02-02T23:39:06+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/posts/first-post/</loc>
+    <loc>//localhost:1313/posts/first-post/</loc>
     <lastmod>2024-02-02T23:39:06+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/categories/python/</loc>
+    <loc>//localhost:1313/categories/python/</loc>
     <lastmod>2024-02-02T23:39:06+05:30</lastmod>
   </url><url>
-    <loc>montepy.in/archives/</loc>
+    <loc>//localhost:1313/archives/</loc>
   </url><url>
-    <loc>montepy.in/search/</loc>
+    <loc>//localhost:1313/search/</loc>
   </url>
 </urlset>

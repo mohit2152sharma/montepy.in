@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: montepy.in/sitemap.xml
+Sitemap: //localhost:1313/sitemap.xml
