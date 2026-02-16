@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>How-To on Monte&#39;s Snippets</title>
-    <link>//localhost:1313/categories/how-to/</link>
+    <link>montepy.in/categories/how-to/</link>
     <description>Recent content in How-To on Monte&#39;s Snippets</description>
     <generator>Hugo -- 0.136.5</generator>
     <language>en</language>
     <lastBuildDate>Thu, 14 Nov 2024 17:27:43 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/categories/how-to/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="montepy.in/categories/how-to/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to set up a JavaScript/TypeScript project</title>
-      <link>//localhost:1313/posts/how-to-setup-jsts-project/</link>
+      <link>montepy.in/posts/how-to-setup-jsts-project/</link>
       <pubDate>Thu, 14 Nov 2024 17:27:43 +0530</pubDate>
-      <guid>//localhost:1313/posts/how-to-setup-jsts-project/</guid>
+      <guid>montepy.in/posts/how-to-setup-jsts-project/</guid>
       <description>&lt;h2 id=&#34;running-a-javascript-file&#34;&gt;Running a Javascript file&lt;/h2&gt;
 &lt;p&gt;Suppose you have a javascript file that you want to run from the command line.&lt;/p&gt;
 &lt;ol&gt;
