@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Engineering on Monte&#39;s Snippets</title>
+    <link>//localhost:1313/categories/engineering/</link>
+    <description>Recent content in Engineering on Monte&#39;s Snippets</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 22 Feb 2026 21:24:25 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cognitive Load</title>
+      <link>//localhost:1313/posts/cognitive-load/</link>
+      <pubDate>Sun, 22 Feb 2026 21:24:25 +0530</pubDate>
+      <guid>//localhost:1313/posts/cognitive-load/</guid>
+      <description>&lt;p&gt;With the recent update of &lt;code&gt;claude&lt;/code&gt; (which is a significant improvement), like many, my programming style has also changed. Unlike the old days (it&amp;rsquo;s just been a few weeks, and it&amp;rsquo;s already old), I don&amp;rsquo;t write code &lt;strong&gt;&amp;ldquo;manually&amp;rdquo;&lt;/strong&gt;, like laboriously typing &lt;code&gt;def&lt;/code&gt; before every function — I simply ask &lt;code&gt;claude&lt;/code&gt; to do it. Even for the smallest of tasks, I would much rather type &lt;code&gt;&amp;quot;please commit the recent changes and push to remote&amp;quot;&lt;/code&gt; instead of &lt;code&gt;git add . &amp;amp;&amp;amp; git commit -m &amp;quot;(wip)&amp;quot; &amp;amp;&amp;amp; git push&lt;/code&gt;. In other words, I have completely shifted to &lt;strong&gt;&amp;ldquo;Agentic Coding&amp;rdquo;&lt;/strong&gt;. The advantages are clear: I am certainly writing more code and shipping faster, plus while &lt;code&gt;claude&lt;/code&gt; is thinking and writing the code, I get mini breaks to scroll through Instagram slop.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

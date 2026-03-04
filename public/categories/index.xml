@@ -6,8 +6,22 @@
     <description>Recent content in Categories on Monte&#39;s Snippets</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Feb 2025 17:35:54 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 22 Feb 2026 21:24:25 +0530</lastBuildDate>
     <atom:link href="//localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ai</title>
+      <link>//localhost:1313/categories/ai/</link>
+      <pubDate>Sun, 22 Feb 2026 21:24:25 +0530</pubDate>
+      <guid>//localhost:1313/categories/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Engineering</title>
+      <link>//localhost:1313/categories/engineering/</link>
+      <pubDate>Sun, 22 Feb 2026 21:24:25 +0530</pubDate>
+      <guid>//localhost:1313/categories/engineering/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Tools</title>
       <link>//localhost:1313/categories/tools/</link>
