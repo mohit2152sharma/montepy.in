@@ -1,7 +1,7 @@
 ---
 title: "Cognitive Load"
 date: 2026-02-22T21:24:25+05:30
-draft: true
+draft: false
 tags: ["ai", "llm"]
 ShowBreadCrumbs: true
 canonicalUrl: https://montepy.in/posts/cognitive-load
