@@ -1,7 +1,7 @@
 ---
 title: "Websocket"
 date: 2026-06-27T19:00:29+05:30
-draft: true
+draft: false
 ---
 
 If you go through [weboscket.org](https://websocket.org), you will see the essential events are `onopen`, `onmessage`, `onerror`, `onclose`. Naively I assumed that authentication should happen in `onopen` event. But this resulted in an unanticipated security breach. 
