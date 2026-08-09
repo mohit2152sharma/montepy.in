@@ -5,7 +5,7 @@ pagination:
 theme: PaperMod
 
 enableRobotsTXT: true
-buildDrafts: true
+buildDrafts: true # overridden in CI via HUGO_BUILDDRAFTS=false
 buildFuture: true
 # buildExpired: false
 

@@ -38,6 +38,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: "0.146.7"
+      # production build: never publish drafts (config.yml keeps them on for local dev)
+      HUGO_BUILDDRAFTS: false
     steps:
       - name: Check version
         if: ${{ github.event.inputs.hugoVersion }}
