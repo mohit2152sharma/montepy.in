@@ -14,7 +14,18 @@ To overcome this, we needed a noise suppresion which cleans the noise without ad
 
 > Noise suppression is pretty old topic, the idea is to take a noisy signal and remove as much noise as possible while causing minimum distortion to the speech of interest.<sup>1</sup>
 
-RNNoise combines the idea of traditional signal processing with the ideas of deep learning.
+RNNoise combines the idea of traditional signal processing with the ideas of deep learning. It is recurrent neural network. 
+
+# TODO: 
+1. Describe RNN briefly
+  - how is it trained
+  - what it predicts
+  - what's its data
+2. Issues encountered while working with it: 
+  - Audio getting cleaned completely
+  - Words getting stripped away
+  - User plus by standers voice coming in (or not getting cleaned properly)
+3. How did we overcome those challenges? 
 
 
 1. https://jmvalin.ca/demo/rnnoise/
