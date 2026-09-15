@@ -17,7 +17,11 @@ You are acting in a noisy environment. Do not invoke a tool call until the user 
 
 Additionally, we introduced a confirm-then-act protocol. It looks fancy in writing, but it simply means asking the user for confirmation before invoking the tool call. This made sense because, even if the tool call was unintentional, the user could stop it from executing by denying the request. Of course, the complete system instruction was much bigger than this (roughly 6,000 tokens, which was another issue to tackle), with similar lines written for each tool. We realised pretty soon that this was not going to scale as we added more tool calls. Tool-call adherence is inversely proportional to the number of tokens in the system instruction. Beyond 8,000 tokens, adherence drops rapidly, even though the model's context length is quite large.
 
+> A large context window does not guarantee instruction adherence. As system instructions grow, important tool-calling rules become easier for the model to miss.
+
 Our next solution was to offload some of the system instruction and its logic to the tool definitions. The confirm-then-act protocol was shifted to the tool definition: `If the user confirms, invoke this tool again with confirmed=true`. This improved tool-call adherence, but it gave rise to another issue. Since the tool call was invoking itself, it often entered a loop or invoked the same tool multiple times. Overall tool-call adherence was good, but there were instances in which users experienced the same tool call more than five times after requesting it only once. While the numbers looked good overall, the experience was so bad for some users that we had to try something else. The issue with this solution was that it tried to manage tool-call execution state with a probabilistic model. Of course, there is a chance that the model will invoke the tool again if the tool response is not supplied within a given time frame. This became apparent when we realised that the model often makes the same tool call again if its loop is not closed. When the model sends a tool call, it expects us to send back a tool response. If the response to that tool call (tracked via `call_id`) is not sent back, the model may invoke the tool again, thinking that the user has not provided the result yet and that it should ask again. This is amplified if the system instruction includes phrases such as `Ask the user for confirmation`.
+
+> Never make a probabilistic model the source of truth for execution state. Every tool call must be closed with a response tied to its `call_id`.
 
 The final solution we settled on was moving the tool-call execution state out of the model and periodically nudging it toward the next step. This also helped us reduce the number of tokens in the system instruction. In other LLM parlance, this may be known as prompt chaining.
 
@@ -25,3 +29,4 @@ The idea was essentially to introduce a new primitive called `ToolRun` and use i
 
 This last method really improved our tool-call adherence: it went from 52% to 84%, all because the state was no longer part of the system instruction or tool-call definition.
 
+> Keep intent recognition in the model, but move workflow state into deterministic application code. For us, that raised tool-call adherence from 52% to 84%.
