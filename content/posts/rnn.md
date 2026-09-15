@@ -14,7 +14,7 @@ To overcome this, we needed a noise suppresion which cleans the noise without ad
 
 > Noise suppression is pretty old topic, the idea is to take a noisy signal and remove as much noise as possible while causing minimum distortion to the speech of interest.<sup>1</sup>
 
-RNNoise combines the idea of traditional signal processing with the ideas of deep learning. It is recurrent neural network. 
+RNNoise combines the idea of traditional signal processing with the ideas of deep learning. 
 
 # TODO: 
 1. Describe RNN briefly
