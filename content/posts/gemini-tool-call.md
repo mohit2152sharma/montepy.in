@@ -2,6 +2,10 @@
 title: "Gemini Tool Call"
 date: 2026-09-15T21:09:49+05:30
 draft: false
+tags: ["ai", "voice", "gemini", "llm"]
+canonicalUrl: https://aqademic.substack.com/p/gemini-tool-call
+ShowBreadCrumbs: true
+categories: ["engineering", "voice"]
 ---
 
 Working with `gemini-live-2.5-flash-native-audio` (of course, naming things is not Google's strongest suit—remember Bard?) has its own ups and downs. No doubt, the liveliness, expressiveness, and language capabilities are really good, but tool (function) calling had me thinking otherwise.
