@@ -3,7 +3,7 @@ title: "All the ways to `git add`"
 date: 2024-10-24T20:26:20+05:30
 draft: false
 tags: ["git"]
-canonicalUrl: https://aqademic.substack.com/p/all-the-ways-to-git-add
+canonicalUrl: https://montepy.in/posts/all-the-ways-to-git-add
 ShowBreadCrumbs: true
 categories: ["tools"]
 ---
