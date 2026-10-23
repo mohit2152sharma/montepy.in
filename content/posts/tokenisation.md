@@ -17,7 +17,7 @@ Before we set out to explore approaches, let's define a metric which can help us
 
 Compression ratio: It's the ratio of number of bytes over number of tokens, and it measures how efficiently we are able to encode text into numbers (or tokens). The higher the better, because the more we are able to compress, the fewer tokens we will need to run our computation.
 
-# Approach 1: Character-level tokenisation
+### Approach 1: Character-level tokenisation
 
 It's the first way that comes to mind i.e. split the text by characters. This is known as character-level tokenisation. For our toy example, the number of tokens will be 25 and number of bytes will be 28 (🐢 takes 4 bytes in UTF-8). The compression ratio is around 1.12. It isn't much better than not compressing at all. In addition to that, our vocabulary size is huge: Unicode defines ~150k+ characters.
 
@@ -41,7 +41,7 @@ Breakdown:
 
 > Is a large vocabulary a bad thing? As it turns out, yes. With a large vocabulary many characters are rare, and the model doesn't learn rare tokens well because it sees them so few times during training. A larger vocabulary also means more memory: the embedding table at the input is vocab_size × d_model. And more computation at the output, where the model has to score every one of the ~150k characters at every position.
 
-# Approach 2: Byte level tokenisation
+### Approach 2: Byte level tokenisation
 
 Where each byte is represented by one token. If we tokenise over bytes, then the compression ratio will be 1, well we didn't compress anything. However our vocabulary size is small: `256` (each byte comprises `8` bits, so 2⁸), but the sequence length is bigger.
 
@@ -65,7 +65,7 @@ Breakdown:
 
 > Is a bigger sequence length a bad thing? As it turns out, yes. The attention computation grows by N² where `N` is the number of tokens. Context window fills faster. Token generation is slower.
 
-# Approach 3: Word-level tokenisation
+### Approach 3: Word-level tokenisation
 
 We can split by space and treat each word as a token. For our toy example, the compression ratio will be 28/5 = 5.6.
 
