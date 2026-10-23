@@ -14,7 +14,7 @@ on:
       hugoVersion:
         description: "Hugo Version"
         required: false
-        default: "0.146.7"
+        default: "0.167.0"
 
 # Allow one concurrent deployment
 concurrency:
@@ -37,7 +37,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: "0.146.7"
+      HUGO_VERSION: "0.167.0"
       # production build: never publish drafts (config.yml keeps them on for local dev)
       HUGO_BUILDDRAFTS: false
     steps:
