@@ -4,7 +4,6 @@ date: 2025-02-12T17:35:54+05:30
 draft: true
 tags: ["yaml", "shell"]
 ShowBreadCrumbs: true
-canonicalUrl: https://montepy.in/posts/time-saving-yaml-tricks
 categories: ["tools"]
 ---
 

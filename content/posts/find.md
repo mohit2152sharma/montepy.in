@@ -1,10 +1,10 @@
 ---
 title: "How to `find` files in terminal?"
+description: "A manager and developer dialogue that builds a safe find command step by step: match png and jpg files, filter by age and size, then delete them."
 date: 2024-02-21T20:26:20+05:30
 draft: false
 tags: ["bash", "shell"]
 ShowBreadCrumbs: true
-canonicalUrl: https://montepy.in/posts/find
 categories: ["tools"]
 ---
 

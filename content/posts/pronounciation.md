@@ -3,7 +3,6 @@ title: "Pronounciation"
 date: 2026-09-19T17:35:01+05:30
 draft: true
 tags: ["ai", "gemini", "llm", "voice"]
-canonicalUrl: https://montepy.in/posts/pronounciation
 ShowBreadCrumbs: true
 categories: ["engineering", "voice"]
 ---

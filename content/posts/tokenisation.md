@@ -1,9 +1,9 @@
 ---
 title: "Tokenisation"
+description: "How text becomes numbers for LLMs: character, byte, word-level and BPE tokenisation compared on one example by vocabulary size and compression ratio."
 date: 2026-10-23T14:36:43+05:30
 draft: false
 tags: ["llm", "ai"]
-canonicalUrl: https://montepy.in/posts/tokenisation
 ShowBreadCrumbs: true
 ---
 
@@ -89,7 +89,7 @@ Any word not in this vocabulary, say `lowly`, would become `UNKNOWN` (0).
 
 With byte level encoding, we have too small of a vocabulary and with words level encoding we have too big of a vocabulary. We need something in middle.
 
-# Approach 4: BPE (byte pair encoding) Tokenisation 
+### Approach 4: BPE (byte pair encoding) Tokenisation
 
 The idea of BPE is simple, start with individual bytes and keep merging the most frequent adjacent pair of tokens until the vocabulary reaches the desired size or no more merges are possible. 
 

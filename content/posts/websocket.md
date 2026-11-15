@@ -1,10 +1,11 @@
 ---
-title: "Websocket"
+title: "Authenticating WebSocket connections"
+description: "Why WebSocket auth in the connection handler lets unauthenticated clients send data, and how moving the check to the upgrade event closes the gap."
 date: 2026-06-27T19:00:29+05:30
 draft: false
 ---
 
-If you go through [weboscket.org](https://websocket.org), you will see the essential events are `onopen`, `onmessage`, `onerror`, `onclose`. Naively I assumed that authentication should happen in `onopen` event. But this resulted in an unanticipated security breach. 
+If you go through [websocket.org](https://websocket.org), you will see the essential events are `onopen`, `onmessage`, `onerror`, `onclose`. Naively I assumed that authentication should happen in `onopen` event. But this resulted in an unanticipated security breach. 
 
 But first the normal web requests. In a normal requests, I can send custom headers like `Authorization: Bearer token`. This works, because the browser makes the preflight request, asking the server `"I am about to make this request with this header and this method, do you allow it?"`. At this stage the server can reject this request, if either the method or the header doesn't exist. 
 

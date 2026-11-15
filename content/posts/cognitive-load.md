@@ -1,10 +1,10 @@
 ---
 title: "Cognitive Load"
+description: "How coding with Claude changes programming: less typing, less thinking, and why design patterns built for human maintainers may become an afterthought."
 date: 2026-02-22T21:24:25+05:30
 draft: false
 tags: ["ai", "llm"]
 ShowBreadCrumbs: true
-canonicalUrl: https://montepy.in/posts/cognitive-load
 categories: ["ai", "engineering"]
 ---
 

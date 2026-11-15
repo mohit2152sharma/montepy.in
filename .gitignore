@@ -1,0 +1,4 @@
+# Hugo build output and caches: CI builds these fresh.
+/public/
+/resources/_gen/
+.hugo_build.lock
