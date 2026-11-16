@@ -54,8 +54,8 @@ params:
       url: &github "https://github.com/mohit2152sharma"
     # - name: youtube
     #   url: "https://www.youtube.com/channel/UChZfYRQRGADaLtgdYaB0YBg"
-    - name: threads
-      url: &threads "https://www.threads.net/@_m__o__n__t__e_"
+    - name: x
+      url: &x "https://x.com/data_question"
     - name: linkedin
       url: &linkedin "https://www.linkedin.com/in/mohit-sharma-82030487/"
     # - name: rss
@@ -66,7 +66,7 @@ params:
   # so it lists the social profiles without the mailto: link.
   schema:
     publisherType: Organization
-    sameAs: [*github, *threads, *linkedin]
+    sameAs: [*github, *x, *linkedin]
 
   assets:
     # disableHLJS: true # to disable highlight.js
