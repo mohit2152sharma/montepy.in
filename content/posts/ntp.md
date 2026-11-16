@@ -40,7 +40,7 @@ The command's output shows that the local time is out of sync with RTC time. RTC
 hwclock --systohc
 ```
 
-There is one more issue. If you look at the output of `timedatectl status`, it shows that though `NTP service` is active, the `System clock synchronized` is set to `no`. Meaning the system clock is not synchronized to the npt service. This is required, otherwise you will run into the issue of unsynchronized clocks again after some time. `NTP service` allows the system clock to synchronize its clocks using a centralized server. The synchronization happens over network and the full form of `NTP` is `Network time protocol`. To ensure, your server is communicating with the NTP service, keep the port `123` open in the firewall and allow outbound and inbound traffic through it (this would depend on your firewall configuration).
+There is one more issue. If you look at the output of `timedatectl status`, it shows that though `NTP service` is active, the `System clock synchronized` is set to `no`. Meaning the system clock is not synchronized to the ntp service. This is required, otherwise you will run into the issue of unsynchronized clocks again after some time. `NTP service` allows the system clock to synchronize its clocks using a centralized server. The synchronization happens over network and the full form of `NTP` is `Network time protocol`. To ensure, your server is communicating with the NTP service, keep the port `123` open in the firewall and allow outbound and inbound traffic through it (this would depend on your firewall configuration).
 
 To check the logs of the ntp service, you can run the following command:
 
