@@ -19,7 +19,7 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Monte's Snippets
   # Home page meta description, and the fallback for pages without their own.
-  description: "Monte's dev journal: hands-on notes on Python, shell tools, git, LLMs and voice AI, drawn from real debugging and production work."
+  description: "Monte's Snippets, a dev journal: hands-on notes from the field on building real-time voice agents, LLMs, and systems."
   keywords: [python, shell, git, llm, voice ai]
   author: Mohit Sharma
   DateFormat: "January 2, 2006"
@@ -144,6 +144,15 @@ outputs:
     - HTML
     - RSS
     - JSON # necessary for search
+    - llms # /llms.txt (template: layouts/_default/llms.txt)
+
+# llms.txt: a plain-text index of the site for AI tools (https://llmstxt.org).
+outputFormats:
+  llms:
+    baseName: llms
+    mediaType: text/plain
+    isPlainText: true
+    notAlternative: true
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true

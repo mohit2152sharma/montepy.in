@@ -215,6 +215,24 @@ class SiteTest(unittest.TestCase):
                     self.assertTrue(built.is_file())
                     self.assertIn("post-entry", built.read_text(encoding="utf-8"))
 
+    def test_llms_txt(self):
+        text = (SITE / "llms.txt").read_text(encoding="utf-8")
+        home = self.pages["/"]
+        lines = text.splitlines()
+        self.assertEqual(lines[0], "# Monte's Snippets")
+        # The summary is the same text as the home meta description.
+        self.assertIn(f"> {home.descriptions[0]}", lines)
+        # Every published post is listed once, with a summary; nothing else.
+        sitemap = (SITE / "sitemap.xml").read_text(encoding="utf-8")
+        posts = set(re.findall(r"<loc>(https://montepy\.in/posts/[^/<]+/)</loc>", sitemap))
+        listed = re.findall(r"^- \[[^\]]+\]\((https://montepy\.in/posts/[^)]+)\): \S", text, re.M)
+        self.assertEqual(sorted(listed), sorted(posts))
+        # Contact holds the X and LinkedIn profiles from the social icons.
+        contact = text.split("## Contact", 1)[1]
+        wanted = [u for u in home.social if "x.com/" in u or "linkedin.com/" in u]
+        self.assertEqual(len(wanted), 2)
+        self.assertEqual(re.findall(r"\]\((https://[^)]+)\)", contact), wanted)
+
     def test_search_page_is_noindex(self):
         self.assertIn("noindex", self.pages["/search/"].robots)
 

@@ -1,0 +1,25 @@
+{{- /*
+  /llms.txt (https://llmstxt.org). Overrides the PaperMod template to add
+  the site summary, a description for each post and a Contact section.
+  All values come from config.yml and post front matter.
+*/ -}}
+# {{ site.Title }}
+
+> {{ site.Params.description }}
+
+Written by {{ site.Params.author }}. Each post below links to its page, with a one-line summary.
+
+## Posts
+{{ range where (where site.RegularPages "Section" "posts") "Params.searchHidden" "!=" true -}}
+- [{{ .Title }}]({{ .Permalink }}): {{ .Description | default (.Summary | plainify) }}
+{{ end }}
+## Contact
+
+To get in touch with {{ site.Params.author }}:
+{{ $labels := dict "x" "X (Twitter)" "linkedin" "LinkedIn" -}}
+{{ range site.Params.socialIcons -}}
+{{ $url := .url -}}
+{{ with index $labels .name -}}
+- [{{ . }}]({{ $url }})
+{{ end -}}
+{{ end -}}
