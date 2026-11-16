@@ -21,7 +21,6 @@ BASE = f"https://{HOST}/"
 # Accepted exceptions. Each one has a reason; keep this list short.
 SHORT_TITLE_OK = {
     "/": "the home title is the brand name only (theme behaviour)",
-    "/posts/first-post/": "test post; the owner decides to rename or unpublish it",
 }
 PAGINATED = re.compile(r"(^|/)page/\d+/$")
 
@@ -206,6 +205,15 @@ class SiteTest(unittest.TestCase):
                 if page is not None:
                     self.assertNotIn("noindex", page.robots)
         self.assertNotIn(BASE + "search/", sitemap)
+
+    def test_term_pages_with_index_file_list_posts(self):
+        # A term _index.md without published posts builds an empty page.
+        for taxonomy in ("tags", "categories"):
+            for index in (REPO / "content" / taxonomy).glob("*/_index.md"):
+                built = SITE / taxonomy / index.parent.name / "index.html"
+                with self.subTest(term=f"{taxonomy}/{index.parent.name}"):
+                    self.assertTrue(built.is_file())
+                    self.assertIn("post-entry", built.read_text(encoding="utf-8"))
 
     def test_search_page_is_noindex(self):
         self.assertIn("noindex", self.pages["/search/"].robots)
