@@ -4,7 +4,6 @@ description: "How we cut unintended tool calls in a Gemini Live voice agent: sys
 date: 2026-09-15T21:09:49+05:30
 draft: false
 tags: ["ai", "voice", "gemini", "llm"]
-canonicalUrl: https://aqademic.substack.com/p/gemini-tool-call
 ShowBreadCrumbs: true
 categories: ["engineering", "voice"]
 ---

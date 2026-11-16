@@ -137,8 +137,8 @@ class SiteTest(unittest.TestCase):
             with self.subTest(path=path):
                 self.assertEqual(len(p.canonicals), 1)
                 c = p.canonicals[0]
-                if urlparse(c).netloc != HOST:
-                    continue  # cross-domain canonical: syndicated post
+                # This blog is the only place the posts are published, so
+                # no page may hand its canonical to another domain.
                 if PAGINATED.search(path):
                     self.assertEqual(c, BASE + PAGINATED.sub(r"\1", path).lstrip("/"))
                 else:

@@ -144,7 +144,7 @@ outputs:
     - HTML
     - RSS
     - JSON # necessary for search
-    - llms # /llms.txt (template: layouts/_default/llms.txt)
+    - llms # /llms.txt (template: layouts/llms.txt)
 
 # llms.txt: a plain-text index of the site for AI tools (https://llmstxt.org).
 outputFormats:
