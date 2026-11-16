@@ -1,9 +1,9 @@
 ---
 title: "All the ways to `git add`"
+description: "What git add does to the index, how git add ., git add -A, --all, * and -p differ, and how to undo a git add with git reset, with examples."
 date: 2024-10-24T20:26:20+05:30
 draft: false
 tags: ["git"]
-canonicalUrl: https://montepy.in/posts/all-the-ways-to-git-add
 ShowBreadCrumbs: true
 categories: ["tools"]
 ---

@@ -1,0 +1,14 @@
+# Weekly pull requests for theme and GitHub Actions updates. The workflow
+# builds and tests each pull request, so an update that breaks the site
+# fails before it is merged. Hugo itself is pinned in
+# .github/workflows/gh-pages.yml (HUGO_VERSION) and is updated by hand.
+version: 2
+updates:
+  - package-ecosystem: gitsubmodule
+    directory: /
+    schedule:
+      interval: weekly
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly

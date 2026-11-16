@@ -1,8 +1,8 @@
 ---
 title: "How to parse json in terminal using jq"
+description: "A practical jq tutorial: use curl and jq in the terminal to call the GitHub API and find the repository with the most commits, without using Python."
 date: 2024-04-01T22:43:39+05:30
 draft: false
-canonicalUrl: https://montepy.in/posts/jq
 tags: ["bash", "shell"]
 ShowBreadCrumbs: true
 categories: ["tools"]
@@ -16,7 +16,7 @@ Ofcourse, one can use python to find the answer, and it might be probably easy f
 
 For installation steps, refer this [link](https://jqlang.github.io/jq/download/)
 
-- The endpoint to get all the repos is: [`https://api.github.com/users/{username}/repos`](https://api.github.com/users/{username}/repos). Let's try that:
+- The endpoint to get all the repos is: `https://api.github.com/users/{username}/repos` (replace `{username}` with a GitHub username). Let's try that:
 
 ```bash
 curl 'https://api.github.com/users/mohit2152sharma/repos'

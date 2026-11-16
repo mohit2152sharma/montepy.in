@@ -3,7 +3,6 @@ title: "Interview 1: Agentic Harness"
 date: 2026-10-20T17:15:02+05:30
 draft: true
 tags: ["interview", "ai-engg"]
-canonicalUrl: https://montepy.in/posts/interview-1
 ShowBreadCrumbs: true
 ---
 

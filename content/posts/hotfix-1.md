@@ -1,9 +1,9 @@
 ---
 title: "Hotfix 1: Redirect or Rewrite"
+description: "A production hotfix: why an Istio redirect broke iOS clients by dropping the Authorization header, and why an Istio rewrite fixed it for every client."
 date: 2026-09-27T12:26:23+05:30
 draft: false
 tags: ["hotfix", "networking", "devops"]
-canonicalUrl: https://montepy.in/posts/hotfix-1
 ShowBreadCrumbs: true
 ---
 _This is the first edition of the [Hotfix](https://montepy.in/tags/hotfix/) series, in which I document an issue I encountered in production and how I fixed it._

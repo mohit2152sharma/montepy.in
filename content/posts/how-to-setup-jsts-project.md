@@ -1,9 +1,9 @@
 ---
-title: How to set up a JavaScript/TypeScript project
+title: "Set up a JavaScript/TypeScript project"
+description: "Step-by-step setup to run JavaScript and TypeScript files and projects with node, npm, package.json, tsconfig.json, ts-node and tsx."
 date: 2024-11-14T17:27:43+05:30
 draft: false
 tags: ["how-to", "javascript", "typescript"]
-canonicalUrl: https://montepy.in/posts/how-to-setup-jsts-project
 ShowBreadCrumbs: true
 categories: ["how-to"]
 ---

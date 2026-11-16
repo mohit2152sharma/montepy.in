@@ -1,10 +1,10 @@
 ---
 title: "Time Saving Yaml Tricks"
+description: "Three YAML tricks that save time: anchors and aliases to avoid repetition, reading environment variables in CI and docker-compose, and multiline strings."
 date: 2025-02-12T17:35:54+05:30
-draft: true
+draft: false
 tags: ["yaml", "shell"]
 ShowBreadCrumbs: true
-canonicalUrl: https://montepy.in/posts/time-saving-yaml-tricks
 categories: ["tools"]
 ---
 
