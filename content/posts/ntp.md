@@ -1,8 +1,11 @@
 ---
 title: "Synchronising Clocks"
+description: "Fixing an AWS SignatureDoesNotMatch error caused by clock skew on Linux: check timedatectl, sync the hardware clock and keep NTP syncing on port 123."
 date: 2025-05-06T14:57:08+05:30
-draft: true
-tags: [bash, shell]
+draft: false
+tags: ["bash", "shell", "devops", "networking"]
+ShowBreadCrumbs: true
+categories: ["engineering"]
 ---
 
 Few days back, I encountered the following error on my website [saral.club](https://saral.club).

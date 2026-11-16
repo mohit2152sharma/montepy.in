@@ -1,5 +1,5 @@
 ---
 title: "Posts tagged networking"
 linkTitle: "networking"
-description: "Posts tagged networking: HTTP redirects versus rewrites in Istio, and why a redirect can make a client drop its Authorization header."
+description: "Posts tagged networking: Istio redirects versus rewrites, and how NTP keeps server clocks in sync so that signed AWS requests are not rejected."
 ---
